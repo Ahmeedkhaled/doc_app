@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:task_doc/core/helpers/extensions.dart';
 import 'package:task_doc/core/routing/routes.dart';
 
-import '../../../../core/theming/styles.dart';
+import '../../../../../core/theming/styles.dart';
 
 class DontHaveAccountText extends StatelessWidget {
   const DontHaveAccountText({super.key});
