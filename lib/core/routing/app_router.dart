@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_doc/core/di/dependency_injection.dart';
 import 'package:task_doc/core/routing/routes.dart';
+import 'package:task_doc/features/auth/sign_up/logic/cubit/sign_up_cubit.dart';
+import 'package:task_doc/features/auth/sign_up/ui/sign_up_screen.dart';
 import 'package:task_doc/features/home/home_screen.dart';
-import 'package:task_doc/features/login/logic/cubit/login_cubit.dart';
-import 'package:task_doc/features/login/ui/login_screen.dart';
+import 'package:task_doc/features/auth/login/logic/cubit/login_cubit.dart';
+import 'package:task_doc/features/auth/login/ui/login_screen.dart';
 import 'package:task_doc/features/onboarding/onboarding_screen.dart';
 
 class AppRouter {
@@ -20,6 +22,13 @@ class AppRouter {
           builder: (_) => BlocProvider(
             create: (context) => getIt<LoginCubit>(),
             child: const LoginScreen(),
+          ),
+        );
+      case Routes.signUpScreen:
+        return MaterialPageRoute(
+          builder: (_) => BlocProvider(
+            create: (context) => getIt<SignUpCubit>(),
+            child: const SignUpScreen(),
           ),
         );
       case Routes.homeScreen:

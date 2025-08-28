@@ -3,8 +3,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:task_doc/core/helpers/app_regex.dart';
 import 'package:task_doc/core/helpers/spacing.dart';
 import 'package:task_doc/core/widgets/app_text_form_field.dart';
-import 'package:task_doc/features/login/logic/cubit/login_cubit.dart';
-import 'package:task_doc/features/login/ui/widgets/password_validations.dart';
+import 'package:task_doc/features/auth/login/logic/cubit/login_cubit.dart';
+import 'package:task_doc/features/auth/login/ui/widgets/password_validations.dart';
 
 class EmailAndPasswordScreen extends StatefulWidget {
   const EmailAndPasswordScreen({super.key});
