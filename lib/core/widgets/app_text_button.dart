@@ -35,7 +35,7 @@ class AppTextButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(borderRadius ?? 16.0),
           ),
         ),
-        backgroundColor: MaterialStatePropertyAll(
+        backgroundColor: WidgetStatePropertyAll(
           backgroundColor ?? ColorsManager.mainBlue,
         ),
         padding: WidgetStateProperty.all<EdgeInsets>(
