@@ -4,7 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:task_doc/core/helpers/spacing.dart';
 import 'package:task_doc/core/theming/styles.dart';
 import 'package:task_doc/core/widgets/app_text_button.dart';
-import 'package:task_doc/features/auth/login/data/models/login_request_body.dart';
 import 'package:task_doc/features/auth/login/logic/cubit/login_cubit.dart';
 import 'package:task_doc/features/auth/login/ui/widgets/dont_have_account_text.dart';
 import 'package:task_doc/features/auth/login/ui/widgets/email_and_password_screen.dart';
